@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homepage</title>
+    {% load  static%}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    
+    {% load static %}
+    <link rel="icon" href="{% static 'images/home icon.png' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+    <style>
+        img{
+            width: 300px;
+            height: 200px;
+        }
+        h1{
+            background: bisque;
+            font-size: 40px;
+            line-height: 80px;
+        }
+        
+        h1:hover{
+            background: crimson;
+        }
+        
+    </style>
+    
+</head>
+<body>
+
+<center><h1>Tourguide</h1></center>
+
+<a href="{% url 'about' %}" class="btn btn-info">About</a>
+<a href="{% url 'form' %}" class="btn btn-danger">Form</a>
+<a href="{% url 'product' %}" class="btn btn-warning">Product</a>
+
+<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, accusantium animi commodi cupiditate dolorem doloremque explicabo, facilis laudantium magni perspiciatis quod reiciendis reprehenderit, saepe similique sint suscipit tempore voluptate voluptatem.</span><span>Ab amet blanditiis dignissimos distinctio dolor dolorum eius enim eum exercitationem, facilis inventore iure laudantium quis quo quos repellendus ut voluptates! Commodi consectetur, facere libero minima pariatur quisquam tempora vero.</span><span>Deleniti ea labore libero maiores nam odio odit possimus sequi? Consequatur esse harum minima nobis nulla qui quod reprehenderit soluta! Aliquam assumenda consequatur enim eveniet, ipsum iste placeat porro voluptatum!</span></p>
+
+<img src="{% static 'images/rolex.avif' %}" alt="">
+<img src="{% static 'images/watch1.avif' %}" alt="">
+<img src="{% static 'images/watch1.avif' %}" alt="">
+<img src="{% static 'images/watch3.avif' %}" alt="">
+<img src="{% static 'images/watch4.avif' %}" alt="">
+<br><br>
+
+<h1 class="heading2">Services</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolores fugit officiis. Cum eum fugiat incidunt labore tempora. Architecto consectetur cum doloremque eveniet exercitationem illum magni, molestias placeat sit soluta!</p>
+
+<img class="myimage" src="{% static 'images/watch4.avif' %}" alt="">
+
+</body>
+</html>

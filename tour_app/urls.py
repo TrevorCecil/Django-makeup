@@ -1,0 +1,12 @@
+
+from django.contrib import admin
+from django.urls import path
+from tour_app import views
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', views.home,name='home'),
+    path('about/', views.about,name='about'),
+    path('product/', views.product, name='product'),
+    path('form/', views.form, name='form'),
+]
